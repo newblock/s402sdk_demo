@@ -430,7 +430,9 @@ export default function AsyncDemo() {
             </div>
             <div className="text-sm text-muted-foreground">
               <p><strong>Async Mode:</strong> Immediate response, background blockchain verification</p>
-              <p><strong>Sync Mode:</strong> Waits for blockchain confirmation before responding</p>
+              <p>Suitable for financial function, sensitive data access, and scenarios requiring highest security guarantees.</p>
+              <p><strong>Sync Mode:</strong> Waits for blockchain confirmation before responding.</p>
+              <p>Suitable for micropayment and regular API calls, user experience-first scenarios, providing sufficient security through signature verification.</p>
             </div>
           </CardContent>
         </Card>
@@ -634,7 +636,7 @@ export default function AsyncDemo() {
           <CardContent>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><strong>Immediate Response:</strong> API returns immediately after signature verification</li>
-              <li><strong>Background Verification:</strong> Blockchain confirmation happens in background</li>
+              <li><strong>:</strong> Blockchain confirmation happens in background</li>
               <li><strong>Better UX:</strong> Users don't wait for blockchain confirmations</li>
               <li><strong>Same Security:</strong> All validation rules still apply (txHash required)</li>
               <li><strong>Flexible:</strong> Switch between sync and async modes easily</li>
@@ -676,4 +678,3 @@ export default function AsyncDemo() {
     </div>
   );
 }
-

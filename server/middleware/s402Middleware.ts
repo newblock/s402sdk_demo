@@ -113,7 +113,9 @@ export function requireS402(routeKey: string) {
 
 /**
  * S402 payment gating middleware with asynchronous verification
- * Returns immediate response, performs blockchain verification in background
+ * Returns immediate response, performs blockchain verification in background, and Grant temporary access immediately.
+ * If on-chain verification succeeds, update the project database status to grant long-term access.
+ * If on-chain verification fails, update the database status to revoke access.
  */
 export function requireS402Async(routeKey: string) {
   return async (req: Request, res: Response, next: NextFunction) => {
