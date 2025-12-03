@@ -11,7 +11,7 @@ Port: 5000
 ChainId: 56
 
 # Your wallet address that will receive payments
-Recipient: 0xb3B977509AE61CD17C618aa929be867b563c315f
+Recipient: 0x1a85156c2943b63febeee7883bd84a7d1cf0da0c
 
 # Default price per API call in USD1 tokens (e.g., 0.001 = $0.001)
 Price: 0.001

@@ -130,6 +130,7 @@ export function loadConfig(): EnvConfig {
   console.log(`   Base Price: ${price} USD1 (${config.BASE_PRICE_USD1} wei)`);
   console.log(`   Minimum Confirmations: ${config.MINIMUM_CONFIRMATIONS}`);
   console.log(`   Trust Proxy: ${config.TRUST_PROXY}`);
+   console.log(`   RPC Node: ${config.BSC_RPC}`);
   
   return config;
 }

@@ -27,7 +27,7 @@ declare global {
 }
 
 export default function AsyncDemo() {
-  const [recipient, setRecipient] = useState('0xb3b977509ae61cd17c618aa929be867b563c315f');
+  const [recipient, setRecipient] = useState('');
   const [amount, setAmount] = useState('0.001');
   const [txHash, setTxHash] = useState('');
   const [loading, setLoading] = useState(false);

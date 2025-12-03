@@ -9,7 +9,8 @@ export const USD1_TOKEN = "0x8d0D000Ee44948FC98c9B98A4FA4921476f08B0d"; // USD1 
 
 // RPC Endpoints by Chain ID
 export const RPC_ENDPOINTS: Record<number, string> = {
-  56: "https://binance.llamarpc.com", // BNB Chain Mainnet
+  //56: "https://binance.llamarpc.com", // BNB Chain Mainnet
+  56: "https://rpc.ankr.com/bsc/5bdbe0a4080ea75a1ab3f0d6262f664be736d23825d10979da9264f3fc1d3218", // BNB Chain Mainnet
   97: "https://data-seed-prebsc-1-s1.binance.org:8545", // BSC Testnet
 };
 
