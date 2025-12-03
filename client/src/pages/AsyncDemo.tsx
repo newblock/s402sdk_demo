@@ -429,10 +429,17 @@ export default function AsyncDemo() {
               </Button>
             </div>
             <div className="text-sm text-muted-foreground">
-              <p><strong>Async Mode:</strong> Immediate response, background blockchain verification</p>
-              <p>Suitable for financial function, sensitive data access, and scenarios requiring highest security guarantees.</p>
-              <p><strong>Sync Mode:</strong> Waits for blockchain confirmation before responding.</p>
-              <p>Suitable for micropayment and regular API calls, user experience-first scenarios, providing sufficient security through signature verification.</p>
+              {asyncMode ? (
+                <>
+                  <p><strong>Async Mode:</strong> Immediate response, background blockchain verification</p>
+                  <p>Suitable for micropayment and regular API calls, user experience-first scenarios, providing sufficient security through signature verification.</p>
+                </>
+              ) : (
+                <>
+                  <p><strong>Sync Mode:</strong> Waits for blockchain confirmation before responding.</p>
+                  <p>Suitable for financial function, sensitive data access, and scenarios requiring highest security guarantees.</p>
+                </>
+              )}
             </div>
           </CardContent>
         </Card>
